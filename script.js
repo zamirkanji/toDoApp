@@ -54,7 +54,7 @@ for (let i = 0; i < li.length; i++) {
 // Event Listeners (callback functions)
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterEnter);
-clear.addEventListener("click", removeAll);
+// clear.addEventListener("click", removeAll);
 
 
 //new function to when li is created (input.value.length > 1) create button next to list item and when button is clicked it deletes said list item
