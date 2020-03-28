@@ -25,7 +25,7 @@ body {
 	background-image: url(http://marlacummins.com/wp-content/uploads/2014/10/To_Do_List.png);
 	background-size: cover;
 	min-width: 100vw;
-        box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -73,32 +73,51 @@ h1 {
 	font-weight: 400;
 }
 
+#input:hover {
+box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+/* 	transition: all 0.5s ease 0s; */
+	background: #404040;
+	border: 1px solid #9fa7a8;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+}
+
 #input::placeholder {
   color: white;
   opacity: .8;
   font-weight: 500;
 }
 
-button {
+#enter {
 	position: static;
   border-radius: 10px;
 	/* padding: 5px 15px;  top bottom, left right */
 	padding: 5px;
   margin: 5px;
-  opacity: 0.6;
+  opacity: 0.3;
   font-weight: 500;
 	border: 1px solid white;
 	/* 	text-transform: uppercase; */
 	text-decoration: none;
 	transition: all 0.5s ease 0s;
+	background-color: black;
+	color: white;
 }
 
-button:hover {
+#enter:hover {
+	border: 1px solid black;
+}
+
+#enter:active {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
 		0 17px 50px 0 rgba(0, 0, 0, 0.19);
 	transition: all 0.5s ease 0s;
-  background: #9fa7a8;
-  border: 1px solid #9fa7a8;
+  background: #5e6566;
+  /* border: 1px solid #9fa7a8; */
 	letter-spacing: 1px;
 	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
@@ -149,14 +168,21 @@ li::after {
 	height: 100%;
   /* justify-content: center; */
 	/* border: 1px solid white; */
-  border-radius: 10px;
+	border-radius: 10px;
+	border: .5px solid silver;
   /* padding: 5px 80px;
   margin-top: 30px;
   margin: 30px; */
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 12px 16px 0 rgba(90, 88, 88, 0.12),
+		0 17px 50px 0 rgba(75, 73, 73, 0.1);
 	opacity: 0.5;
   background-color: black;
+}
+
+.list-box:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+		border: 1px solid black;
 }
 
 li {
@@ -172,3 +198,32 @@ li {
   padding: 5px; */
   /* text-align: center; */
 }
+
+.clear-all {
+	justify-content: center;
+	align-self: center;
+	position: static;
+	border-radius: 10px;
+	background-color: black;
+	border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+	text-align: center;
+	opacity: 0.7;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	font-weight: 400;
+}
+
+.clear-all:active {
+	/* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19); */
+  background: #3c3f3f;
+  /* border: 1px solid #9fa7a8; */
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+
