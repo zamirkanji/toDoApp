@@ -25,6 +25,7 @@ body {
 	background-image: url(http://marlacummins.com/wp-content/uploads/2014/10/To_Do_List.png);
 	background-size: cover;
 	min-width: 100vw;
+        box-sizing: border-box;
 }
 
 h1 {
