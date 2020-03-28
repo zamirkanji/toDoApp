@@ -253,7 +253,7 @@ li {
   /* text-align: center; */
 }
 
-@media all and(max-width: 800px) and(min-width: 650px) {
+@media all and (max-width: 800px) and (min-width: 650px) {
 	li {
 		font-size: 12px;
 	}
