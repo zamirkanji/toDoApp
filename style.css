@@ -52,7 +52,7 @@ body {
 }
 
 /* testing!!!!!! ////////******* */
-@media all and (max-width: 800px) and (min-height: 601px) and (max-height: 799px) {
+/* @media all and (max-width: 800px) and (min-height: 601px) and (max-height: 799px) {
 	.body-container {
 		height: 85%;
 	}
@@ -61,7 +61,7 @@ body {
 	.body-container {	
 		height: 95%;
 	}
-}
+} */
 /* testing!!!!!! ////////******* */
 
 
