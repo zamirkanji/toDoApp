@@ -35,6 +35,12 @@ body {
 	/* flex-wrap: nowrap; */
 }
 
+@media all and (max-width: 800px) {
+	.body-container {
+		width: 75%;
+	}
+}
+
 h1 {
   position: sticky;
 	top: 0;
@@ -243,6 +249,18 @@ li::after {
 @media screen and (max-width: 600px) {
 	.clear-all {
 		width: 35%;
+	}
+}
+
+@media all and (max-width: 800px) and (min-width: 650px) {
+	.clear-all {
+		font-size: 10px;
+	}
+}
+
+@media all and (max-width: 650px) and (min-width: 450px) {
+	.clear-all {
+		font-size: 9px;
 	}
 }
 
