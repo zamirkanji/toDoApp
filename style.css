@@ -11,13 +11,14 @@ html {
 
 body {
 	min-height: 100vh;
+	/* this is for if you have a background image that needs to cover entire screen */
 }
 
 body {
 	padding: 25px;
 	margin: 0;
-	justify-content: center;
 	width: 100vw;
+	justify-content: center;
   list-style: none;
   border: 5px solid silver;
   -ms-box-orient: horizontal;
@@ -27,7 +28,7 @@ body {
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-	font-family: "helvetica";
+	font-family: "arial";
 	background-image: url(http://marlacummins.com/wp-content/uploads/2014/10/To_Do_List.png);
 	background-size: cover;
 	/* min-width: 100vw; */
@@ -102,6 +103,12 @@ p {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
 		0 17px 50px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;
+}
+
+@media all and (max-width: 800px) and (max-height: 800px) {
+	p {
+		margin-bottom: 25px;
+	}
 }
 
 
