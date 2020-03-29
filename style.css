@@ -95,6 +95,7 @@ h1 {
 @media all and (max-width: 650px) and (min-width: 450px) {
 	h1 {
 		font-size: 1.50em;
+		width: 75%;
 	}
 }
 
@@ -108,7 +109,7 @@ p {
 	/* width: 75%; */
 	/* width: 100%; */
   padding: 5px;
-	margin-bottom: 100px;
+	margin-bottom: 75px;
 	opacity: 0.3;
 	background-color: #e7eff6;
 	border-radius: 10px;
@@ -223,7 +224,6 @@ box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
 /////////////////////////////////
 test button function 
 /////////////////////////////////
-
 #enter {
 	position: static;
 	height: 100%;
@@ -252,8 +252,6 @@ test button function
 	text-shadow: 1px 1px 2px #427388; 
 	border-radius: 10px;
 }
-
-
 ////////////////////////////////////
 test button expandable function 
 ////////////////////////////////////
@@ -263,6 +261,10 @@ test button expandable function
 	text-decoration: line-through;
 	color: rgba(40, 124, 124, 0.4);
 	/* transition: ease-out .2s; */
+}
+
+.list-box {
+	margin-top: 50px;
 }
 
 .list-box:not(:active) {
@@ -310,6 +312,7 @@ test button expandable function
 	/* height: 1.5rem; */
 	box-sizing: border-box;
 	height: 100%;
+	margin-top: 25px;
 	/* align-items: center; */
 	border-radius: 15px;
 	background-color: black;
