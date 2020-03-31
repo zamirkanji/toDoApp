@@ -83,7 +83,7 @@ p {
 	background-color: rgba(83, 83, 83, .2);;
 	/* background-image: linear-gradient(#cccccc, #fff); */
 	border-radius: 15px;
-	border: .5px solid #749bc2;
+	/* border: .5px solid #749bc2; */
 	font-weight: 400;
 	color: #3d6185;
 	letter-spacing: 2px;
@@ -107,16 +107,18 @@ p {
 
 .input-enter {
 	width: 50%;
+	height: 40px;
 	box-sizing: border-box;
 	display: inline-flex;
 	justify-content: center;
 }
 
 #input {
+	box-sizing: border-box;
 	position: static;
-	height: 16px;
+	/* height: 16px; */
 	width: 60%;
-	height: 2em;
+	height: 100%;
 	margin-right: 10%;
 	border-radius: 15px;
 	/* background-color: #ccc; */
@@ -159,15 +161,15 @@ p {
 	position: static;
 	height: 100%;
 	width: 30%;
-	border-radius: 10px;
+	border-radius: 15px;
 	padding: 5px;
   opacity: 0.8;
 	font-weight: 500;
 	font-size: 14px;
 	text-decoration: none;
 	transition: all 0.5s ease 0s;
-	background-color: #ccc;
-	border: 2px solid #ccc;
+	background-color: rgb(199, 199, 199);
+	border: 2px solid rgb(199, 199, 199);
 	color:  #3d6185;
 	letter-spacing: 1px;
 	box-shadow: 0 12px 16px 0 rgba(90, 88, 88, 0.12),
@@ -175,10 +177,11 @@ p {
 }
 
 #enter:hover {
-	border: 2px solid white;
+	border: 2px solid #3d6185;
 	opacity: .3;
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
 		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	transition: border .5s ease-in;
 }
 
 #enter:active {
@@ -231,7 +234,7 @@ test button expandable function
 
 .done {
 	text-decoration: line-through;
-	color: rgba(64, 64, 64, 0.4);
+	color: rgba(64, 64, 64, 0.8);
 }
 
 .list-box {
@@ -242,12 +245,12 @@ test button expandable function
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
 	0 17px 50px 0 rgba(0, 0, 0, 0.19);
 		background-color: rgba(83, 83, 83, .2);
-	border: 1px solid #3d6185;
+	/* border: 2px solid white; */
 	letter-spacing: 1px;
 	/* -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57); */
-	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	text-shadow: 0px 0px 6px rgb(226, 223, 223);
 	transition: box-shadow .5s ease-in;
 }
 
@@ -271,13 +274,18 @@ test button expandable function
 .list-box:hover {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
 		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	/* border: 2px solid #3d6185; */
+	transition: border .5s ease-in;
 }
 
 
 #clear-all {
+	position: relative;
 	width: 25%;
 	font-size: 14px;
 	box-sizing: border-box;
+	/* flex-wrap: nowrap;
+	display: inline-flex; */
 	height: 3em;
 	margin-top: 25px;
 	letter-spacing: 1px;
@@ -304,7 +312,7 @@ test button expandable function
 		0 17px 50px 0 rgba(0, 0, 0, 0.19); 
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	.clear-all {
 		width: 35%;
 	}
@@ -312,6 +320,7 @@ test button expandable function
 
 @media all and (max-width: 800px) and (min-width: 650px) {
 	.clear-all {
+		width: 35%;
 		font-size: 10px;
 	}
 }
@@ -320,12 +329,13 @@ test button expandable function
 	.clear-all {
 		font-size: 9px;
 	}
-} */
+}
 
 #clear-all:hover {
 	background: #749bc2;
 	border: 2px solid white;
 	opacity: .3;
+	transition: border .5s ease-in;
 	/* -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
@@ -347,6 +357,8 @@ li {
 	border-radius: 15px;
 	/* width: 84%; */
 	/* background-color: red; */
+	text-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+	0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 li:hover {
@@ -355,10 +367,15 @@ li:hover {
 		border-radius: 15px;
 		transition: hover .7s ease-in;
 		transition: background-color .5s ease-in;
-		background-color: #87b6e4;
+		/* background-color: #87b6e4; */
 		opacity: .7;
-		color: black;
+		/* color: black; */
 
+}
+
+.black {
+	/* background-color: rgb(199, 199, 199); */
+	background-color: rgba(64, 64, 64, 0.4);;
 }
 
 /* @media all and (max-height: 800px) {
@@ -396,8 +413,8 @@ li::before {
 	display: block;
 	width: 100%;
 	height: 1px;
-	background: silver;
-	opacity: .3;
+	background: #ccc;
+	opacity: .7;
 }
 
 li::after {
@@ -405,8 +422,8 @@ li::after {
 	display: block;
 	width: 100%;
 	height: 1px;
-	background: grey;
-	opacity: .3;
+	background: #ccc;
+	opacity: .7;
 }
 
 .fade-in {

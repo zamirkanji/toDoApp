@@ -39,7 +39,8 @@ function removeAll() {
 
 ol.addEventListener("click", (event) => {
   if (event.target.matches("li")) {
-    event.target.classList.toggle("done")
+    event.target.classList.toggle("done");
+    event.target.classList.toggle("black");
   }
 })
 
