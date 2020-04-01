@@ -14,14 +14,8 @@ function inputLength() {
 
 function createListElement() {
   let li = document.createElement("li");
-
   li.className = "list-btn fade-in";
   li.appendChild(document.createTextNode(input.value));
-  // document.createElement(listBtn);
-  // li.appendChild(deleteListItem); // ???
-  // let listBtn = li.appendChild(deleteListItem);
-  // listBtn.appendChild(li);
-  // ol.appendChild(listBtn);
   ol.appendChild(li);
   input.value = "";
 }
@@ -33,6 +27,8 @@ function createBtnElement() {
   // btn.className = "delete-btn";
   // listBtn.appendChild(deleteListItem);
   ol.appendChild(deleteListItem);
+
+  deleteListItem.addEventListener("click", deleteItem);
 }
 
 function addListAfterClick() {
@@ -66,7 +62,7 @@ input.addEventListener("keypress", addListAfterEnter);
 // enter.addEventListener("click", addListAfterClick, createListBtn);
 // input.addEventListener("keypress", addListAfterEnter, createListBtn);
 clear.addEventListener("click", removeAll);
-deleteListItem.addEventListener("click", deleteItem);
+
 
 
 //new function to when li is created (input.value.length > 1) create button next to list item and when button is clicked it deletes said list item
