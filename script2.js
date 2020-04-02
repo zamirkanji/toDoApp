@@ -16,12 +16,44 @@ function inputLength() {
 }
 
 function createListElement() {
+
+
+  let listItemDiv = document.createElement("div");
+  // buttonDiv.setAttribute("class", "button-div");
+  listItemDiv.className = "button-div";
+
   let li = document.createElement("li");
   li.className = "list-item cross-out";
+
   li.appendChild(document.createTextNode(input.value));
-  ol.appendChild(li);
+
   input.value = "";
-  li.onclick = createDeleteBtn;
+
+  listItemDiv.appendChild(li);
+
+  let deleteBtn = document.createElement("BUTTON");
+  deleteBtn.innerHTML = "Delete";
+  deleteBtn.className = "delete-btn";
+
+  // deleteBtn.onload.style.visibility = "hidden";
+  // li.onclick = document.querySelector(".delete-btn").style.visibility = "visible";
+  // li.appendChild(deleteBtn);
+
+  li.appendChild(deleteBtn);
+
+  document.querySelector("ol").appendChild(listItemDiv);
+  // document.querySelector("ol").appendChild(li);
+  // document.querySelector("ol").appendChild(deleteBtn);
+
+  listItemDiv.appendChild(deleteBtn);
+
+
+
+
+
+
+  // li.onclick = createDeleteBtn;
+
 
 
 
@@ -29,23 +61,26 @@ function createListElement() {
   // deleteBtn.onclick = delete_row();
 }
 
-function createDeleteBtn() {
-  let deleteBtn = document.createElement("BUTTON");
-  deleteBtn.innerHTML = "Delete";
-  deleteBtn.className = "delete-btn";
-  listBox.appendChild(deleteBtn);
+// function createDeleteBtn() {
+//   // let deleteBtn = document.createElement("BUTTON");
+//   // deleteBtn.innerHTML = "Delete";
+//   // deleteBtn.className = "delete-btn";
+//   // deleteBtn.onload.style.visibility = "hidden";
+//   // li.appendChild(deleteBtn);
 
-  let x = document.querySelector(".delete-btn");
-  let o = document.querySelector(".list-box")
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    o.appendChild(deleteBtn);
-  } else {
-    x.style.display = "none";
-  }
+//   // listBox.appendChild(deleteBtn);
+
+//   // let x = document.querySelector(".delete-btn");
+//   // let o = document.querySelector(".list-box")
+//   // if (x.style.display === "none") {
+//   //   x.style.display = "block";
+//   //   o.appendChild(deleteBtn);
+//   // } else {
+//   //   x.style.display = "none";
+//   // }
 
 
-}
+// }
 
 
 // function delete_row() {
@@ -75,15 +110,6 @@ ol.addEventListener("click", (event) => {
   if (event.target.matches("li")) {
     event.target.classList.toggle("done");
     event.target.classList.toggle("black");
-
-    // let x = document.querySelector(".delete-btn");
-    // let o = document.querySelector(".list-box")
-    // if (x.style.display === "none") {
-    //   x.style.display = "block";
-    //   o.appendChild(deleteBtn);
-    // } else {
-    //   x.style.display = "none";
-    // }
   }
 
 
