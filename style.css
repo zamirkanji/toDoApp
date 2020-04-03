@@ -7,6 +7,7 @@ body {
 	font-family: "arial";
 	background-color: white;
 }
+
 .body-container {
 	-ms-box-orient: horizontal;
 	display: -webkit-box;
@@ -22,6 +23,8 @@ body {
 	align-items: center;
 	flex-direction: column;
 }
+
+
 
 h1 {
 	width: 50%;
@@ -57,10 +60,6 @@ p {
 	text-align: center;
 }
 
-
-
-
-
 .input-enter {
 	position: relative;
 	width: 50%;
@@ -73,6 +72,7 @@ p {
 	box-shadow: 0 12px 16px 0 rgba(90, 88, 88, 0.12),
 		0 17px 50px 0 rgba(75, 73, 73, 0.1);
 }
+
 #input {
 	box-sizing: border-box;
 	position: static;
@@ -89,6 +89,7 @@ p {
 	font-weight: 200;
 	transition: background-color 0.5s ease-in;
 }
+
 #input:hover {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
 		0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -96,18 +97,17 @@ p {
 	border: 2px solid #3d6185;
 	opacity: 0.4;
 	letter-spacing: 1px;
-	/* -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57); */
 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
 	transition: box-shadow 0.5s ease-in;
 }
+
 #input::placeholder {
 	color: white;
 	opacity: 0.6;
 	font-weight: 500;
 	color: #3d6185;
 }
+
 #enter {
 	box-sizing: border-box;
 	position: static;
@@ -124,6 +124,7 @@ p {
 	color: #3d6185;
 	letter-spacing: 1px;
 }
+
 #enter:hover {
 	border: 2px solid #3d6185;
 	opacity: 0.3;
@@ -132,9 +133,10 @@ p {
 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
 	transition: border 0.5s ease-in;
 }
+
 #enter:active {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	0 17px 50px 0 rgba(0, 0, 0, 0.19);
 	transition: all 0.5s ease 0s;
 	background: #5e6566;
 	letter-spacing: 1px;
@@ -144,17 +146,16 @@ p {
 }
 
 
-
-
 /* //////////////////////////////////////
+
 LIST BOX AND LIST ITEMS 
+
 ///////////////////////////////////// */
 
+
+
 .list-box {
-	/* display: inline-flex; */
-	/* display: flex; */
 	margin-top: 50px;
-	/* padding: 2px 40px 2px 40px; */
 	width: 50%;
 	opacity: 0.5;
 	border-radius: 15px;
@@ -162,12 +163,11 @@ LIST BOX AND LIST ITEMS
 		0 17px 50px 0 rgba(0, 0, 0, 0.19);
 	background-color: rgba(83, 83, 83, 0.2);
 	letter-spacing: 1px;
-	/* -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57); */
 	text-shadow: 0px 0px 6px rgb(226, 223, 223);
 	transition: box-shadow 0.5s ease-in;
 }
+
+
 
 .list-box:hover {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
@@ -175,17 +175,19 @@ LIST BOX AND LIST ITEMS
 	transition: border 0.5s ease-in;
 }
 
+
+
 .button-div {
 	flex-direction: row;
 	width: 100%;
-	/* background-color: red; */
 	display: flex;
 	margin: 10px 0px 10px -10px;
 }
 
+
+
 li {
 	width: 70%;
-	/* margin-right: 0; */
 	z-index: 1;
 	cursor: pointer;
 	color: #3d6185;
@@ -199,18 +201,19 @@ li {
 		0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+
 li:hover {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
 		0 17px 50px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 15px 0px 0px 15px;
 	transition: hover 0.7s ease-in;
 	transition: background-color 0.5s ease-in;
-	/* background-color: #87b6e4; */
 	opacity: 0.7;
-	/* font-size: 16px; */
 	transition: font-size 0.4s ease-in;
-	/* color: black; */
 }
+
+
 
 li::before {
 	content: "";
@@ -221,6 +224,7 @@ li::before {
 	opacity: 0.7;
 	margin-bottom: 3px;
 }
+
 li::after {
 	content: "";
 	display: block;
@@ -231,14 +235,13 @@ li::after {
 	margin-top: 3px;
 }
 
+
+
 .delete-btn {
 	box-sizing: border-box;
-	/* display: inline-block; */
-/* 	position: relative; */
 	align-items: flex-start;
 	height: 1;
 	width: 30%;
-
 	border-radius: 0px 15px 15px 0px;
 	padding: 5px;
 	opacity: 1;
@@ -250,6 +253,8 @@ li::after {
 	color: white;
 	letter-spacing: 2px;
 }
+
+
 
 .delete-btn:hover {
 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 2);
@@ -263,15 +268,17 @@ li::after {
 	-o-animation: fadeIn ease 1s;
 	-ms-animation: fadeIn ease 1s;
 }
+
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
 	}
-
+	
 	100% {
 		opacity: 1;
 	}
 }
+
 @-moz-keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -281,35 +288,39 @@ li::after {
 		opacity: 1;
 	}
 }
+
 @-webkit-keyframes fadeIn {
 	0% {
 		opacity: 0;
 	}
-
+	
 	100% {
 		opacity: 1;
 	}
 }
+
 @-o-keyframes fadeIn {
 	0% {
 		opacity: 0;
 	}
-
+	
 	100% {
 		opacity: 1;
 	}
 }
+
 @-ms-keyframes fadeIn {
 	0% {
 		opacity: 0;
 	}
-
+	
 	100% {
 		opacity: 1;
 	}
 }
 
 #clear-all {
+	visibility: hidden;
 	position: relative;
 	width: 20%;
 	font-size: 11px;
@@ -341,10 +352,11 @@ li::after {
 	}
 }
 
+
+
 @media all and (max-width: 800px) and (min-width: 650px) {
 	.clear-all {
 		width: 35%;
-
 		font-size: 10px;
 	}
 }
@@ -357,18 +369,11 @@ li::after {
 
 #clear-all:hover {
 	background: #749bc2;
-	/* border: 2px solid white; */
 	opacity: 0.3;
 	transition: border 0.5s ease-in;
 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.34),
 		0 17px 50px 0 rgba(0, 0, 0, 0.39);
-	/* -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
-	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-		0 17px 50px 0 rgba(0, 0, 0, 0.19);  */
 }
 
 .black {
@@ -381,114 +386,63 @@ li::after {
 }
 
 /* @media all and (max-height: 800px) {
-
 	li {
-
 		padding: 10px;
-
 	}
-
 }
-
-
 
 @media all and (max-width: 800px) and (min-width: 650px) {
-
 	li {
-
 		font-size: 16px;
-
 	}
-
 }
-
-
 
 @media all and (max-width: 650px) and (min-width: 450px) {
-
 	li {
-
 		font-size: 14px;
-
 	}
-
 }
-
-
 
 @media all and (max-width: 450px) and (min-width: 250px) {
-
 	li {
-
 		font-size: 12px;
-
 	}
-
 }
-
-
 
 @media all and (max-width: 350px) and (min-width: 50px) {
-
 	li {
-
 		font-size: 10px;
-
 	}
-
 } */
+
 /* @media all and (max-width: 800px) and (min-width: 650px) {
-
 	h1 {
-
 		font-size: 1.75em;
-
 	}
-
 }
-
-
 
 @media all and (max-width: 650px) and (min-width: 450px) {
-
 	h1 {
-
 		font-size: 1.50em;
-
 		width: 75%;
-
 	}
-
 }
 
-
-
 @media all and (max-width: 450px) and (min-width: 250px) {
-
 	h1 {
-
 		font-size: 1.00em;
-
 	}
-
 } */
+
 /* @media all and (max-width: 800px) and (min-height: 800px) {
-
 	.body-container {
-
 		width: 75%;
-
 		height: 75%;
-
 	}
-
 } */
+
 /* @media all and (max-width: 800px) and (max-height: 800px) {
-
 	p {
-
 		margin-bottom: 25px;
-
 	}
-
 } */
