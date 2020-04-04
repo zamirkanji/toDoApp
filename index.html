@@ -14,22 +14,19 @@
   <!--whole screen/viewport -->
   <div class="body-container">
     <h1 class="header">To-Do List</h1>
-
     <p class="header" id="first">Enter your items below</p>
-
     <div class="input-enter">
       <input id="input" type="text" placeholder="Enter Items">
-      <button id="enter">Enter</button>
+      <button onclick="showClearBtn()" id="enter">Enter >></button>
     </div>
 
     <ol class="list-box">
-
     </ol>
 
-    <button type="button" id="clear-all">Clear All Items</button>
+    <button onclick="hideClearBtn()" type="button" id="clear-all">Clear All Items</button>
 
-    <!-- <script src="script.js"></script> -->
     <script src="script2.js"></script>
+
   </div>
 </body>
 

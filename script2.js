@@ -6,7 +6,7 @@ const container = document.querySelector(".body-container");
 let clear = document.getElementById("clear-all");
 let listBox = document.querySelector(".list-box");
 
-
++ new Date();
 
 function inputLength() {
   return input.value.length;
@@ -36,15 +36,14 @@ function createListElement() {
 function addListAfterClick() {
   if (inputLength() > 0) {
     createListElement();
-    // showClearBtn();
   }
 }
 
 function addListAfterEnter(e) {
   if (inputLength() > 0 && e.keyCode === 13) {
     createListElement();
-
     console.log(e);
+    // console.log(Date.now() / 1000 | 0);
   }
 }
 
@@ -53,8 +52,6 @@ ol.addEventListener("click", (event) => {
   if (event.target.matches("li")) {
     event.target.classList.toggle("done");
     event.target.classList.toggle("black");
-
-    console.log(event);
   }
 });
 
@@ -85,22 +82,24 @@ function hideClearBtn() {
 clear.addEventListener("click", removeAll);
 clear.addEventListener("click", hideClearBtn);
 
+
 enter.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterEnter);
+
 enter.addEventListener("click", showClearBtn);
 input.addEventListener("keypress", showClearBtn);
 
 
 
-function delete_row(e) {
-  // let listItem = this.parentElement;
-  // let ol = listItem.parentElement;
-  // ol.removeChild(listItem);
+// function delete_row(e) {
+//   // let listItem = this.parentElement;
+//   // let ol = listItem.parentElement;
+//   // ol.removeChild(listItem);
 
-  let listItemRow = document.querySelector(".button-div");
-  listItemRow.innerHTML = "";
-  console.log(e);
-}
+//   let listItemRow = document.querySelector(".button-div");
+//   listItemRow.innerHTML = "";
+//   console.log(e);
+// }
 
 
-deleteBtn.addEventListener("click", delete_row);
+// deleteBtn.addEventListener("click", delete_row);
