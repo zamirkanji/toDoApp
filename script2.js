@@ -54,7 +54,6 @@ function addListAfterEnter(e) {
   if (inputLength() > 0 && e.keyCode === 13) {
     createListElement();
     console.log(e);
-    // console.log(Date.now() / 1000 | 0);
   }
 }
 
@@ -71,7 +70,6 @@ function deleteItem() {
   li.innerHTML = "";
   deleteBtn.parentElement = "";
 }
-
 
 
 function removeAll() {
