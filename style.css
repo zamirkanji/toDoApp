@@ -1,3 +1,7 @@
+:root	{
+	--dark-blue: #3d6185;
+}
+
 html,
 body {
 	margin: 0;
@@ -22,6 +26,12 @@ body {
 	height: auto;
 	align-items: center;
 	flex-direction: column;
+}
+
+@media all and (min-height: 800px) {
+	.body-container {
+		height: 100%;
+	}
 }
 
 h1 {
@@ -97,8 +107,8 @@ p {
 	justify-content: center;
 /* 	box-shadow: 0 12px 16px 0 rgba(90, 88, 88, 0.12),
 		0 17px 50px 0 rgba(75, 73, 73, 0.1); */
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.12),
+		0 17px 50px 0 rgba(0, 0, 0, 0.09);
 		background-color: rgb(223, 223, 223);
 }
 
@@ -115,7 +125,7 @@ p {
 }
 @media all and (min-width: 601px) and (max-width: 1000px) {
 	.input-enter {
-		width: 40%;
+		width: 60%;
 	}
 }
 
@@ -142,6 +152,7 @@ p {
 	text-align: center;
 	opacity: 0.8;
 	font-weight: 100;
+/* 	user-select: none; */
 	transition: all .6s ease 0s;
 }
 
@@ -265,7 +276,7 @@ LIST BOX AND LIST ITEMS
 }
 @media all and (min-width: 601px) and (max-width: 1000px) {
 	.list-box {
-		width: 40%;
+		width: 60%;
 	}
 }
 
@@ -470,6 +481,13 @@ li::after {
 		width: 10%;
 	}
 }
+
+@media all and (min-width: 601px) and (max-width: 1000px) {
+	#clear-all {
+		width: 20%;
+	}
+}
+
 
 #clear-all:hover {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),

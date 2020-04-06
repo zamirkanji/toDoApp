@@ -72,6 +72,7 @@ function deleteItem() {
 }
 
 
+
 function removeAll() {
   li.innerHTML = "";
   ol.innerHTML = "";
@@ -95,6 +96,6 @@ clear.addEventListener("click", hideClearBtn);
 enter.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterEnter);
 
+
 enter.addEventListener("click", showClearBtn);
 input.addEventListener("keypress", showClearBtn);
-
